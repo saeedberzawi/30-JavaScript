@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Fira Sans", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(216, 230, 19);
+}
+.container {
+  border: 1px solid black;
+  width: 90%;
+  height: 90%;
+  margin: 3rem 0;
+  background-color: white;
+  box-shadow: 0 0 6px black;
+}
+.container h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 4rem;
+}
+.yellow {
+  color: yellow;
+}
+
+@media (max-width: 650px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+}
+
+/* -------- */
+
+.card-father {
+  /* border: 1px solid black; */
+  width: 90%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* gap: 2rem; */
+  row-gap: 1rem;
+  column-gap: 2rem;
+}
+.card {
+  border: 1px solid black;
+  width: 296px;
+  height: 370px;
+  margin: auto;
+  box-shadow: 0 0 6px black;
+}
+@media (max-width: 560px) {
+  .card {
+    width: 250px;
+    height: 340px;
+  }
+}
+.card h3 {
+  margin: 2rem 0 3px 1rem;
+}
+.under-line {
+  margin-left: 1rem;
+  width: 70px;
+  height: 1.5px;
+  background-color: rgb(216, 230, 19);
+}
+.card-son {
+  margin: 2rem auto;
+  border: 1px solid black;
+  width: 90%;
+  aspect-ratio: 1 / 1;
+}
+.card-son img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------- footer */
+.owner {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem auto;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem auto;
+}
+.menu-a i {
+  font-size: 25px;
+  color: black;
+}
+.menu-a i:hover {
+  color: rgb(216, 230, 19);
+  /* background-color: black; */
+}
+
+/* ------------------------------- */
+
+@media (max-width: 750px) {
+  .owner {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
