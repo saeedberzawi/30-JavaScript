@@ -46,7 +46,7 @@ section {
   margin: 3rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  row-gap: 0.8rem;
+  row-gap: 2rem;
   column-gap: 0.8rem;
 }
 .card {
